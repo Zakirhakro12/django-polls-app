@@ -38,7 +38,7 @@ TECHNOLOGIES USED
 - Python 3
 - Django Framework
 - SQLite Database
-- HTML and CSS (templates + static)
+- HTML and CSS (templates + static)  
 
 
 
