@@ -1,0 +1,22 @@
+{% load static %}
+
+<!-- Link to custom CSS -->
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+<body>
+    <div class="container">
+        <h1>Welcome to Our Polling System</h1>
+        
+        {% if latest_question_list %}
+            <ul class="poll-list">
+                {% for question in latest_question_list %}
+                    <li class="poll-item">
+                        <a href="{% url 'polls:detail' question.id %}" class="poll-link">{{ question.question_text }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="no-polls">No polls are available.</p>
+        {% endif %}
+    </div>
+</body>

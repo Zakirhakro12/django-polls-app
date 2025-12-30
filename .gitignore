@@ -1,0 +1,28 @@
+# Security
+.env
+
+# Databases
+db.sqlite3
+db.sqlite3-journal
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Media and Static
+media/
+static_cdn/
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
