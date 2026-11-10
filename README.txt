@@ -72,7 +72,6 @@ HOW TO RUN THE PROJECT
 HOW TO RUN THE TESTS
 
 go to the project directory (if not already there):
-cd "The sample application in Django - Zakir Hussain (IS-5433)"
 cd mysite
 
 Run the tests:
