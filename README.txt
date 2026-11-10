@@ -51,7 +51,6 @@ HOW TO RUN THE PROJECT
    pip install django
 
 3. Open the terminal and go to the project directory:
-   cd "The sample application in Django - Zakir Hussain (IS-5433)"
    cd mysite
 
 4. Start the development server:
