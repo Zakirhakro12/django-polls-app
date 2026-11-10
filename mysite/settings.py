@@ -35,7 +35,10 @@ DEBUG = os.getenv("DEBUG", "False").lower() == "true"
 ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 CSRF_TRUSTED_ORIGINS = []
 
-railway_domain = os.getenv("RAILWAY_PUBLIC_DOMAIN")
+railway_domain = (
+    os.getenv("RAILWAY_PUBLIC_DOMAIN")
+    or "YOUR-ACTUAL-DOMAIN.up.railway.app"
+)
 if railway_domain:
     ALLOWED_HOSTS.append(railway_domain)
     CSRF_TRUSTED_ORIGINS.append(f"https://{railway_domain}")
@@ -109,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
+    },c
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
